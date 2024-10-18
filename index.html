@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-title">
+            <h1 class="weather-title">Check the Weather!!</h1>
+        </div>
+        <div class="card">
+            <form class="search" onsubmit="getWeatherData(event)">
+                <input type="search" placeholder="Search" id="search-input">
+                <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="temp">
+                <h1 id="current-temp"></h1>
+                <h2 id="location"></h2>
+                <img src="//cdn.weatherapi.com/weather/64x64/night/119.png" id="weather-img">
+            </div>
+            <div class="weather-info">
+                <div class="humidity-container">
+                    <div class="humidity-image">
+                        <img src="./humidity.png" class="humidity-img">
+                    </div>
+                    <div class="humidity-content">
+                        <h3 class="title">Humidity</h3>
+                        <h3 id="current-humidity"></h3>
+                    </div>
+                </div>
+                <div class="wind-container">
+                    <div class="wind-image">
+                        <img src="./wind.jpg" class="wind-img">                    
+                    </div>
+                    <div class="wind-content">
+                        <h3 class="title">Wind Speed</h3>
+                        <h3 id="current-wind"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

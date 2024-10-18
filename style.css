@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e8f5e9;;
+}
+
+.card{
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    padding: 30px;
+    background-image: linear-gradient(to right, #11998e, #38ef7d); 
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.search input{
+    padding: 10px;
+    height: 40px;
+    width: 330px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-btn{
+    /* color: black; */
+    height: 40px;
+    width: 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#current-temp{
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+#weather-img{
+    height: 250px;
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-info{
+    display: flex;
+    gap: 40px;
+}
+
+.humidity{
+    display: flex;
+    flex-direction: column;
+}
+
+.humidity-container{
+    display: flex;
+    gap: 5px;
+}
+
+.humidity-img{
+    height: 50px;
+    width: 50px;
+}
+
+.wind-speed{
+    display: flex;
+    flex-direction: column;
+}
+
+.wind{
+    display: flex;
+    
+}
+
+.wind-container{
+    display: flex;
+    gap: 5px;
+}
+
+.wind-img{
+    height: 50px;
+    width: 50px;
+}
+
+.title{
+    font-size: 24px;
+}
+
+@media(max-width:820px){
+
+    .main{
+        padding: 10px;
+    }
+
+    .card{
+        padding: 20px;
+    }
+
+    .search input{
+        width: 250px;
+    }
+    
+    #current-temp{
+        font-size: 50px;
+    }
+    
+    #weather-img{
+        height: 200px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .search input{
+        width: 280px;
+    }
+    
+    #current-temp{
+        font-size: 55px;
+    }
+    
+    #weather-img{
+        height: 210px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .card{
+        padding: 20px;
+    }
+
+    .search input{
+        width: 260px;
+    }
+    
+    #current-temp{
+        font-size: 46px;
+    }
+    
+    #weather-img{
+        height: 180px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:380px){
+    .search input{
+        width: 230px;
+    }
+}
